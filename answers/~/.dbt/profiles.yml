@@ -1,0 +1,13 @@
+answers:
+  outputs:
+    dev:
+      dataset: answer
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      location: US
+      method: oauth
+      priority: interactive
+      project: carbon-octane-426709-q4
+      threads: 1
+      type: bigquery
+  target: dev

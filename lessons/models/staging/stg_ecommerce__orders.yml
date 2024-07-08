@@ -16,7 +16,7 @@ models:
 
       - name: status
         data_type: string
-        description: ""
+        description: "{{ doc('status') }}"
         tests:
           - not_null
           - accepted_values:
@@ -35,7 +35,10 @@ models:
 
       - name: returned_at
         data_type: timestamp
-        description: ""
+        description: "when the order was returned"
+        tests:
+          - not_null:
+              where: "status = 'Returned' "
 
       - name: shipped_at
         data_type: timestamp
