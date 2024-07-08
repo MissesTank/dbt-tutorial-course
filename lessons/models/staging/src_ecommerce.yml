@@ -14,3 +14,10 @@ sources:
       - name: products
 
       - name: users
+
+      - name: events
+        freshness:
+          warn_after: {count: 12, period: hour}
+          error_after: {count: 24, period: hour}
+          # filter: <boolean_sql_expression>
+        loaded_at_field: created_at

@@ -7,6 +7,9 @@ models:
       - name: product_id
         data_type: int64
         description: ""
+        tests:
+          - not_null
+          - unique
 
       - name: cost
         data_type: float64
