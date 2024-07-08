@@ -27,7 +27,7 @@ SELECT
 	od.delivered_at AS order_delivered_at,
 	od.returned_at AS order_returned_at,
 	od.status AS order_status,
-	od.num_of_item as num_items_ordered,
+	od.num_of_item asnum_items_ordered,
 	om.total_sale_price,
 	om.total_product_cost,
 	om.total_profit,
